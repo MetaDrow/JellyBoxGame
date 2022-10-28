@@ -113,7 +113,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   KeyOne: 119
   KeyTwo: 115
-  MoveDirection: {x: 0, y: 0, z: 1}
+  MoveDirection: {x: 0, y: 0, z: 0.5}
   CubeRigidBody: {fileID: 6186590027925659726}
 --- !u!54 &6186590027925659726
 Rigidbody:

@@ -29,7 +29,7 @@ public class CubeMove : MonoBehaviour
 
 	private void OnTriggerEnter (Collider other)
 	{
-		if(this.CompareTag("Player")&& other.CompareTag("Finish"))
+		if(this.CompareTag("Player") && other.CompareTag("Finish"))
 		{
 			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
 		}
