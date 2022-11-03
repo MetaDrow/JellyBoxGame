@@ -17,6 +17,16 @@ public class CubeMove : MonoBehaviour
 
 	private void FixedUpdate ()
 	{
+		Move();
+
+	}
+	private void Update ()
+	{
+		Restart();
+	}
+
+	private void Move ()
+	{
 		if(Input.GetKey(KeyOne))
 		{
 			CubeRigidBody.velocity -= MoveDirection;
@@ -27,6 +37,13 @@ public class CubeMove : MonoBehaviour
 		}
 	}
 
+	private void Restart()
+	{
+		if(Input.GetKey(KeyCode.R))
+		{
+			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+		}
+	}
 	private void OnTriggerEnter (Collider other)
 	{
 		if(this.CompareTag("Player") && other.CompareTag("Finish"))
@@ -34,6 +51,4 @@ public class CubeMove : MonoBehaviour
 			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex +1);
 		}
 	}
-
-
 }
