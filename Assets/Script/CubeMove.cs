@@ -9,6 +9,7 @@ public class CubeMove : MonoBehaviour
 	[SerializeField] KeyCode KeyTwo;
 	[SerializeField] Vector3 MoveDirection;
 	[SerializeField] Rigidbody CubeRigidBody;
+	[SerializeField] public float MoveForce = 0.2f;
 
 	private void Start ()
 	{
@@ -29,11 +30,11 @@ public class CubeMove : MonoBehaviour
 	{
 		if(Input.GetKey(KeyOne))
 		{
-			CubeRigidBody.velocity -= MoveDirection;
+			CubeRigidBody.velocity -= MoveDirection * MoveForce;
 		}
 		if(Input.GetKey(KeyTwo))
 		{
-			CubeRigidBody.velocity += MoveDirection;
+			CubeRigidBody.velocity += MoveDirection * MoveForce;
 		}
 	}
 
