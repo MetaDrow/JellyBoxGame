@@ -8,15 +8,10 @@ public class Jelly : MonoBehaviour
     public GameObject[] Bones;
     public Vector3 Center;
 
-
-
-
-
     void Awake()
     {
         Instance = this;
     }
-
 
     void FixedUpdate()
     {

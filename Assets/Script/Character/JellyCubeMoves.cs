@@ -3,18 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class CubeMoves : MonoBehaviour
+public class JellyCubeMoves : MonoBehaviour
 {
     [SerializeField] KeyCode KeyOne;
     [SerializeField] KeyCode KeyTwo;
     [SerializeField] Vector3 MoveDirection;
     
     [SerializeField] Rigidbody CubeRigidBody;
+    /*
     [SerializeField] Rigidbody CubeRigidBody2;
 	[SerializeField] Rigidbody CubeRigidBody3;
 	[SerializeField] Rigidbody CubeRigidBody4;
-
-    [SerializeField] public float MoveForce = 0.2f;
+    */
+    [SerializeField] public float MoveForce;
 
     private void Start()
     {
@@ -24,29 +25,26 @@ public class CubeMoves : MonoBehaviour
     private void FixedUpdate()
     {
         Move();
-
     }
+
     private void Update()
     {
         Restart();
     }
+
     private void Move()
     {
         if (Input.GetKey(KeyOne))
         {
             CubeRigidBody.velocity -= MoveDirection * MoveForce;
-            CubeRigidBody2.velocity -= MoveDirection * MoveForce;
-			CubeRigidBody3.velocity -= MoveDirection * MoveForce;
-			CubeRigidBody4.velocity -= MoveDirection * MoveForce;
         }
+
         if (Input.GetKey(KeyTwo))
         {
             CubeRigidBody.velocity += MoveDirection * MoveForce;
-            CubeRigidBody2.velocity += MoveDirection * MoveForce;
-			CubeRigidBody3.velocity += MoveDirection * MoveForce;
-			CubeRigidBody4.velocity += MoveDirection * MoveForce;
         }
     }
+
     private void Restart()
     {
         if (Input.GetKey(KeyCode.R))
