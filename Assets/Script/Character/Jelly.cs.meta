@@ -1,9 +1,5 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/Script/CubeMoves.cs.meta
-guid: caffca19dd0c95647afa5b8ab3a6fadd
-========
-guid: d31cc261bdab47e43bb9f46343a226de
->>>>>>>> main:Assets/Script/Trigger.cs.meta
+guid: 4f9a8f06b3447dc439c174fb61da8cc7
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
