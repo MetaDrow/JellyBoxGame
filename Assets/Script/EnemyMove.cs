@@ -5,11 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class EnemyMove : MonoBehaviour
 {
-	[SerializeField] KeyCode KeyOne;
-	[SerializeField] KeyCode KeyTwo;
-	[SerializeField] Vector3 MoveDirection;
-	[SerializeField] Rigidbody CubeRigidBody;
-	[SerializeField] public float MoveForce = 0.2f;
+	[SerializeField] KeyCode _keyOne;
+	[SerializeField] KeyCode _keyTwo;
+	[SerializeField] Vector3 _moveDirection;
+	[SerializeField] Rigidbody _cubeRigidBody;
+	[SerializeField] public float _moveForce = 0.2f;
 
 	private void Start ()
 	{
@@ -28,13 +28,13 @@ public class EnemyMove : MonoBehaviour
 
 	private void Move ()
 	{
-		if(Input.GetKey(KeyOne))
+		if(Input.GetKey(_keyOne))
 		{
-			CubeRigidBody.velocity -= MoveDirection * MoveForce;
+			_cubeRigidBody.velocity -= _moveDirection * _moveForce;
 		}
-		if(Input.GetKey(KeyTwo))
+		if(Input.GetKey(_keyTwo))
 		{
-			CubeRigidBody.velocity += MoveDirection * MoveForce;
+			_cubeRigidBody.velocity += _moveDirection * _moveForce;
 		}
 	}
 

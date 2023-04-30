@@ -5,11 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class JellyCubeMoves : MonoBehaviour
 {
-    [SerializeField] KeyCode KeyOne;
-    [SerializeField] KeyCode KeyTwo;
-    [SerializeField] Vector3 MoveDirection;
-    [SerializeField] Rigidbody CubeRigidBody;
-    [SerializeField] public float MoveForce;
+    [SerializeField] KeyCode _keyOne;
+    [SerializeField] KeyCode _keyTwo;
+    [SerializeField] Vector3 _moveDirection;
+    [SerializeField] Rigidbody _cubeRigidBody;
+    [SerializeField] public float _moveForce;
 
     private void Start()
     {
@@ -28,17 +28,16 @@ public class JellyCubeMoves : MonoBehaviour
 
     private void Move()
     {
-        if (Input.GetKey(KeyOne))
+        if (Input.GetKey(_keyOne))
         {
-            CubeRigidBody.velocity -= MoveDirection * MoveForce;
+            _cubeRigidBody.velocity -= _moveDirection * _moveForce;
         }
 
-        if (Input.GetKey(KeyTwo))
+        if (Input.GetKey(_keyTwo))
         {
-            CubeRigidBody.velocity += MoveDirection * MoveForce;
+            _cubeRigidBody.velocity += _moveDirection * _moveForce;
         }
     }
-
     private void Restart()
     {
         if (Input.GetKey(KeyCode.R))
