@@ -8,13 +8,7 @@ public class JellyCubeMoves : MonoBehaviour
     [SerializeField] KeyCode KeyOne;
     [SerializeField] KeyCode KeyTwo;
     [SerializeField] Vector3 MoveDirection;
-    
     [SerializeField] Rigidbody CubeRigidBody;
-    /*
-    [SerializeField] Rigidbody CubeRigidBody2;
-	[SerializeField] Rigidbody CubeRigidBody3;
-	[SerializeField] Rigidbody CubeRigidBody4;
-    */
     [SerializeField] public float MoveForce;
 
     private void Start()
