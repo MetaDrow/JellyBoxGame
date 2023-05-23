@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class JellyCubeMoves : MonoBehaviour
+public class JellyCubeMovement : MonoBehaviour
 {
     [SerializeField] KeyCode _keyOne;
     [SerializeField] KeyCode _keyTwo;

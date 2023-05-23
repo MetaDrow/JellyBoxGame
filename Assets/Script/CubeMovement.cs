@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 
-public class EnemyMove : MonoBehaviour
+public class CubeMovement : MonoBehaviour
 {
 	[SerializeField] KeyCode _keyOne;
 	[SerializeField] KeyCode _keyTwo;
