@@ -570,11 +570,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd01d8c872369cb4baddd4ff836e9afb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  KeyOne: 0
-  KeyTwo: 0
-  MoveDirection: {x: 0, y: 0, z: 0}
-  CubeRigidBody: {fileID: 0}
-  MoveForce: 0.2
+  _keyOne: 0
+  _keyTwo: 0
+  _moveDirection: {x: 0, y: 0, z: 0}
+  _cubeRigidBody: {fileID: 0}
+  _moveForce: 0.2
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -870,7 +870,7 @@ MonoBehaviour:
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 0.96
   m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 2
+  m_ScreenMatchMode: 1
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
@@ -946,7 +946,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1572378044}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 59.4}
+  m_LocalPosition: {x: 0, y: 0, z: 21}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -955,7 +955,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -335.5, y: -96}
+  m_AnchoredPosition: {x: -430, y: -124}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1572378046
@@ -1246,7 +1246,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1922345909}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 187.3}
+  m_LocalPosition: {x: 0, y: 0, z: 95}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1255,7 +1255,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -446.4, y: 222.4}
+  m_AnchoredPosition: {x: -517, y: 267}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1922345911
@@ -2155,11 +2155,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dd01d8c872369cb4baddd4ff836e9afb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  KeyOne: 276
-  KeyTwo: 275
-  MoveDirection: {x: 1, y: 0, z: 0}
-  CubeRigidBody: {fileID: 3742490333860161337}
-  MoveForce: 1
+  _keyOne: 276
+  _keyTwo: 275
+  _moveDirection: {x: 1, y: 0, z: 0}
+  _cubeRigidBody: {fileID: 3742490333860161337}
+  _moveForce: 1
 --- !u!65 &3742490333860161319
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2773,7 +2773,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f9a8f06b3447dc439c174fb61da8cc7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Bones:
+  _bones:
   - {fileID: 4601688179182055774}
   - {fileID: 591123320950835815}
   - {fileID: 4375940915354370532}
@@ -2782,7 +2782,7 @@ MonoBehaviour:
   - {fileID: 4514080171398602939}
   - {fileID: 2957398876830966341}
   - {fileID: 8327054726129414448}
-  Center: {x: 0, y: 0, z: 0}
+  _center: {x: 0, y: 0, z: 0}
 --- !u!4 &6172028556127884870
 Transform:
   m_ObjectHideFlags: 0
@@ -3160,11 +3160,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: caffca19dd0c95647afa5b8ab3a6fadd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  KeyOne: 273
-  KeyTwo: 274
-  MoveDirection: {x: 0, y: 0, z: 1}
-  CubeRigidBody: {fileID: 4601688179182055773}
-  MoveForce: 5
+  _keyOne: 273
+  _keyTwo: 274
+  _moveDirection: {x: 0, y: 0, z: 1}
+  _cubeRigidBody: {fileID: 4601688179182055773}
+  _moveForce: 3
 --- !u!4 &7868942215687300450
 Transform:
   m_ObjectHideFlags: 0

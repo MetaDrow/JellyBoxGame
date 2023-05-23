@@ -1,28 +1,18 @@
-using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 public class Jelly : MonoBehaviour
 {
-    public static Jelly Instance;
-    public GameObject[] Bones;
-    public Vector3 Center;
-
-    void Awake()
-    {
-        Instance = this;
-    }
-
+    public GameObject[] _bones;
+    public Vector3 _center;
     void FixedUpdate()
     {
-        for (int i = 0; i < Bones.Length; i++)
+        for (int i = 0; i < _bones.Length; i++)
         {
-            Center += Bones[i].transform.position;
+            _center += _bones[i].transform.position;
         }
-        Center = Center / Bones.Length;
-        transform.position = Center;
-
-
+        _center = _center / _bones.Length;
+        transform.position = _center;
     }
 }
 
